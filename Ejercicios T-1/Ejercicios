@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+      echo 'Antonio Méndez';
+    ?>
+
+     <?php
+      echo 'Núemero de teléfono: 956342234</br>';
+      echo 'Dirección: C/Armas de Santiago';
+    ?>
+
+    echo "<table>";
+        ?>
+          <tr><th>Spanish</th><th>English</th></tr>
+          <tr><td>conocimiento</td><td>knowledge</td></tr>
+          <tr><td>amor</td><td>love</td></tr>
+          <tr><td>felicidad</td><td>happiness</td></tr>
+          <tr><td>agua</td><td>water</td></tr>
+          <tr><td>aire</td><td>air</td></tr>
+          <tr><td>pastel</td><td>cake</td></tr>
+          <tr><td>dinero</td><td>money</td></tr>
+          <tr><td>libro</td><td>book</td></tr>
+          <tr><td>bosque</td><td>forest</td></tr>
+      <?php
+        echo "</table>";
+      ?>
+      <?php
+      $x = 144;
+      $y = 999;
+      echo "x = ", $x;
+      echo "<br>y = ", $y;
+      echo "<br>x + y = ", $x + $y;
+      echo "<br>x - y = ", $x - $y;
+      echo "<br>x / y = ", $x / $y;
+      echo "<br>x * y = ", $x * $y;
+    ?>
+    <?php
+    $nombre = "Paco Ávila";
+    echo $nombre;
+  ?>
+  <?php
+      $nombre = "Paco Ávila<br>";
+      $direccion = "C/ Larios, 888 - Ático D<br>";
+      $telefono = "Teléfono: 951 123456";
+      echo $nombre . $direccion . $telefono;
+    ?>
+    <?php
+      $euros = 6;
+      $pesetas = 6 * 166.386;
+      echo $euros, " euros son ", $pesetas, " pesetas.";
+    ?>
+    <?php
+    $pesetas = 1000;
+    $euros = round($pesetas / 166.386, 2);
+    echo $pesetas, " pesetas son ", $euros, " euros";
+   ?>
+   <?php
+      echo "<pre>";
+      echo "    *<br />";
+      echo "   ***<br />";
+      echo "  *****<br />";
+      echo " *******<br />";
+      echo "*********<br />";
+      echo "</pre>";
+    ?>
+    <?php
+    echo "<pre>";
+    echo "    *<br />";
+    echo "   * *<br />";
+    echo "  *   *<br />";
+    echo " *     *<br />";
+    echo "*********<br />";
+    echo "</pre>";
+  ?>
+  <?php
+      echo "<pre>";
+      echo "*********<br />";
+      echo " *     *<br />";
+      echo "  *   *<br />";
+      echo "   * *<br />";
+      echo "    *<br />";
+      echo "</pre>";
+    ?>
+  </body>
+</body>
+</html>
