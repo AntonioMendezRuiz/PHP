@@ -113,7 +113,7 @@
         {
             $negativos++;
         }
-        echo "El número de positivos es " . $positivos . " y de negativos " . $negativos ".";
+        echo "El número de positivos es " . $positivos . " y de negativos " . $negativos . ".";
     ?>
 </body>
 </html>
