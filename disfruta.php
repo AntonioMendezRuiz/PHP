@@ -26,8 +26,8 @@
         $fruta = array("&#127815", "&#127816", "&#127817", "&#127818", "&#127819", "&#127820", "&#127821", "&#127822", "&#127823", "&#127824", "&#127825", "&#127826", "&#127827");
         $contador = array();
         echo "<p style='font-size: 7rem'>";
-        for ($i = 0; $i < $numF -1; $i++){
-            $elige = rand(0,count($fruta));
+        for ($i = 0; $i < $numF; $i++){
+            $elige = rand(0,count($fruta)-1);
             array_push($contador, $fruta[$elige]);
             echo $contador[$i];
         }
