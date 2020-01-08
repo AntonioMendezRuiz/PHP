@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gestor</title>
+    <style>
+      .container {
+        text-align: center;
+      }
+      .botones{
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+      
+    <div class="botones">
+      <h1>Seleccione una acción</h1>
+      <button id="consulta" onclick="muestraConsultas()">Consultar</button>
+      <button id="insertar" onclick="muestraInsertar()">Insertar</button>
+      <button id="borrar" onclick="muestraBorrar()">Borrar</button>
+      <button id="actualizar" onclick="muestraActualizar()">Actualizar</button>
+    </div>
+    <div class="container">
+      <form
+        action="select.php"
+        method="POST"
+        id="consultas"
+        style="display: none"
+      >
+      <h2>CONSULTAR</h2>
+        Elige tabla: <select name="columnas">
+          <option value="familia">Familia</option>
+          <option value="producto">Producto</option>
+          <option value="stock">Stock</option>
+          <option value="tienda">Tienda</option>
+        </select>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <form
+        action="insert.php"
+        method="POST"
+        id="inserta"
+        style="display: none"
+      >
+      <h2>INSERTAR</h2>
+        Elige tabla: <select name="columnas">
+          <option value="familia">Familia</option>
+          <option value="producto">Producto</option>
+          <option value="stock">Stock</option>
+          <option value="tienda">Tienda</option>
+        </select>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <form
+        action="delete.php"
+        method="POST"
+        id="borra"
+        style="display: none"
+      >
+      <h2>BORRAR</h2>
+        Elige tabla: <select name="columnas">
+          <option value="familia">Familia</option>
+          <option value="producto">Producto</option>
+          <option value="stock">Stock</option>
+          <option value="tienda">Tienda</option>
+        </select>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <form
+        action="update.php"
+        method="POST"
+        id="actualiza"
+        style="display: none"
+      >
+      <h2>ACTUALIZAR</h2>
+        Elige tabla: <select name="columnas">
+          <option value="familia">Familia</option>
+          <option value="producto">Producto</option>
+          <option value="stock">Stock</option>
+          <option value="tienda">Tienda</option>
+        </select>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    var muestraConsultas = function() {
+      document.getElementById("consultas").style.display = "block";
+      document.getElementById("inserta").style.display = "none";
+      document.getElementById("borra").style.display = "none";
+      document.getElementById("actualiza").style.display = "none";
+    };
+    var muestraBorrar = function() {
+      document.getElementById("consultas").style.display = "none";
+      document.getElementById("inserta").style.display = "none";
+      document.getElementById("borra").style.display = "block";
+      document.getElementById("actualiza").style.display = "none";
+    };
+    var muestraInsertar = function() {
+      document.getElementById("consultas").style.display = "none";
+      document.getElementById("inserta").style.display = "block";
+      document.getElementById("borra").style.display = "none";
+      document.getElementById("actualiza").style.display = "none";
+    };
+    var muestraActualizar = function() {
+      document.getElementById("consultas").style.display = "none";
+      document.getElementById("inserta").style.display = "none";
+      document.getElementById("borra").style.display = "none";
+      document.getElementById("actualiza").style.display = "block";
+    };
+  </script>
+</html>
